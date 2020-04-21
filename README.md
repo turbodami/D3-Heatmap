@@ -29,5 +29,5 @@ Some ideas and extra credit you can consider:
 * Shade the cells according to magnitude.
 * Allow the user to select a set of SDKs to include in the matrix, and re-render as they change their selection.
 * Allow the user to view example apps for a cell of the matrix they select.
-* Compute a normalized matrix (by row) to better visualize retention and attrition rates. Ex: ![Normalized Payments Matrix](payments-attrition-matrix.png "Normalized Payments Matrix")
+* Compute a normalized matrix (by row) to better visualize retention and attrition rates. Ex: ![Normalized Payments Matrix](payments-norm-matrix.png "Normalized Payments Matrix")
 * We use [Nix](https://nixos.org/nix/) for package management. If you add your dependencies to `default.nix`, then it's easy for us to run your code. Install nix and launch the environment with `nix-shell` (works Linux, MacOS, and most unixes). Or install dependencies however you're comfortable and give us instructions.
