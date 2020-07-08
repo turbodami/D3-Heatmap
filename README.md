@@ -31,4 +31,4 @@ Some ideas you can consider for extra credit:
 * Compute a normalized matrix (by row) to better visualize retention and attrition rates. Ex: ![Normalized Payments Matrix](payments-norm-matrix.png "Normalized Payments Matrix")
 * We use [Nix](https://nixos.org/nix/) for package management. If you add your dependencies to `default.nix`, then it's easy for us to run your code. Install nix and launch the environment with `nix-shell` (works on Linux, macOS, and most unixes). Or install dependencies however you're comfortable and give us instructions.
 
-There's no time limit. Spend as much or as little time on it as you'd like. Fork this git repository, and share your fork when you're done. We'll schedule a follow-up call to review.
+There's no time limit. Spend as much or as little time on it as you'd like. Clone this git repository (don't fork), and push to a new repository when you're ready to share. We'll schedule a follow-up call to review.
