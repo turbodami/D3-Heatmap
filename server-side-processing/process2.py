@@ -47,14 +47,18 @@ def processData2(allSDK, sdkappData, selectedSDKs):
                         'value': 0,
                     })
 
-    for app in hashtable.values():
-        print(app['installed'])
-        # for installed in app['installed']:
-        #     for sdk in matrix:
-        #         if sdk['from_id'] == installed['sdk_id'] and sdk['to_id'] == installed['sdk_id']:
-        #             sdk['value'] += 1
-        # for not_installed in app['not_installed']:
-        #     for installed in app['installed']:
-        #         for sdk in matrix:
-        #             if sdk['from_id'] == not_installed['sdk_id'] and sdk['to_id'] == installed['sdk_id']:
-        #                 sdk['value'] += 1
+    for car, cdr in hashtable.items():
+        for installed in cdr['installed']:
+            
+            for sdk in matrix:
+                if sdk['from_id'] == installed and sdk['to_id'] == installed:
+                    sdk['value'] += 1
+        for not_installed in cdr['not_installed']:
+            
+            for installed in cdr['installed']:
+                for sdk in matrix:
+                    if sdk['from_id'] == not_installed and sdk['to_id'] == installed:
+                        sdk['value'] += 1
+
+    print(matrix)
+    return matrix
