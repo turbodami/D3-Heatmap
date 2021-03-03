@@ -2,7 +2,8 @@ from flask import Flask, request, jsonify, render_template
 from flask_sqlalchemy import SQLAlchemy
 from flask_marshmallow import Marshmallow 
 import os 
-from process2 import processData
+from process import processData
+from process2 import processData2
 
 # Init app
 app = Flask(__name__, static_url_path='', static_folder='client/build', template_folder='client/build')
@@ -132,10 +133,10 @@ def get_dataset():
     
     selectedSDKs = request.json['selectedSDKs']
     selectedSDKs = list(filter(None, selectedSDKs))
-    print(selectedSDKs)
-    #result = processData(result_all_sdk, selectedSDKs, result_all_app_sdk)
-    result = processData(result_all_sdk, result_all_app_sdk, selectedSDKs )
-    print(result)
+   
+    result = processData(result_all_sdk, selectedSDKs, result_all_app_sdk)
+    #result = processData2(result_all_sdk, result_all_app_sdk, selectedSDKs)
+
     return jsonify(result)
 
 # Run server
