@@ -95,7 +95,7 @@ const HeatMap = ({ data }) => {
         .enter()
         .append("g")
         .on("click", function (d) {
-          setDisplayApps(d.to_name, d.from_name);
+          setDisplayApps();
           console.log(displayApps);
         });
 
