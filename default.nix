@@ -13,6 +13,10 @@ pkgs.mkShell rec {
                 ipython
                 nose
                 sqlalchemy
+                flask
+                flask_sqlalchemy
+                flask_marshmallow
+                marshmallow-sqlalchemy
             ];
         })
     ]);
