@@ -1,4 +1,4 @@
-def processData(allSDK, selectedSDKs, sdkappData):
+def processData2(allSDK, selectedSDKs, sdkappData):
     """ 
     Traverse all sdks once to generate:
     1) A matrix in which every element corresponds to a box in the heatmap and holds the accumulated value

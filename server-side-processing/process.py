@@ -1,4 +1,4 @@
-def processData2(allSDK, sdkappData, selectedSDKs):
+def processData(allSDK, sdkappData, selectedSDKs):
     
     hashtable = {}
     for sdkapp in sdkappData:
