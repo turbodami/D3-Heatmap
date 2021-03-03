@@ -133,9 +133,10 @@ def get_dataset():
     
     selectedSDKs = request.json['selectedSDKs']
     selectedSDKs = list(filter(None, selectedSDKs))
-   
-    #result = processData(result_all_sdk, selectedSDKs, result_all_app_sdk)
-    result = processData2(result_all_sdk, result_all_app_sdk, selectedSDKs)
+    
+    #slower (by far)
+    #result = processData2(result_all_sdk, selectedSDKs, result_all_app_sdk)
+    result = processData(result_all_sdk, result_all_app_sdk, selectedSDKs)
 
     return jsonify(result)
 
