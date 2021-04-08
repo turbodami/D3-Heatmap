@@ -1,4 +1,4 @@
-# Data Eng Interview
+# D3 Heatmap
 
 I was curious about how different it would be to process data client-side with Javascript, so there are two folders, /client-side-processing and /server-side-processing.
 
